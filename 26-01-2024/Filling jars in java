@@ -13,13 +13,13 @@ import static java.util.stream.Collectors.toList;
 public class Result {
     public static void main(String[] args){
         Scanner scan=new Scanner(System.in);
-        int n=scan.nextInt();
-        int m=scan.nextInt();
-        int avg=0,a,b,k;
+        long n=scan.nextLong();
+        long m=scan.nextLong();
+        long avg=0,a,b,k;
         for(int i=0;i<m;i++){
-            a=scan.nextInt();
-            b=scan.nextInt();
-            k=scan.nextInt();
+            a=scan.nextLong();
+            b=scan.nextLong();
+            k=scan.nextLong();
             avg+=(b-a+1)*k;
         }
         System.out.println(avg/n);
